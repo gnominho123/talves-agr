@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="{{url_for('static', filename='netflix.png')}}">
+    <style>
+    p{
+    color: yellow;
+    }
+        h1{
+        font-size: 150%;
+        font-family: Arial;
+        color: yellow;
+        }
+        body{
+        background-image: url({{url_for('static',filename='baki.jpg')}})
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>infos by@gnomoccs</title>
+</head>
+<body>
+    <h1 align="center">INFOS CC BY@gnomoccs</h1><br>
+    <h1>{{ conteudo }}</h1>
+    <p>Todos os direitos reservados @gnomoccs</p>
+</body>
+</html>

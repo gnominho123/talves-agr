@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="{{url_for('static', filename='netflix.png')}}">
+    <meta charset="UTF-8">
+    <title>Netflix Brasil - assistir a séries online, assistir a filmes online</title>
+    <style>
+
+    body{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1890px;
+    background-image: url({{url_for('static',filename='background.jpg')}});
+    }
+
+form{
+
+    text-align: center;
+    margin-top: 35%;
+    margin-left: -1%;
+    height: 12%;
+
+
+}
+.campoemail{
+
+font-size: 28px;
+width: 31%;
+ height: 31%;
+ margin-left: 2%;
+}
+.campobotao{
+
+font-size: 28px;
+border: none;
+background-color: #E50914;
+color: white;
+width: 14%;
+ height: 34%;
+ margin-left: -1%;
+
+}
+
+
+    </style>
+</head>
+<body>
+
+
+
+        <form action="/cadastro"  method="POST">
+            <input class="campoemail" placeholder="Email" type="text" name="email">
+            <input class="campobotao" type="submit" value="Vamos lá >">
+        </form>
+
+
+</body>
+</html>

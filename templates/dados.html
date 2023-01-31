@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url({{url_for('static', filename='bg.png')}})
+        }
+        form{
+        margin-top:19%;
+        margin-left: 36%
+
+        }
+        .campoemail{
+        width: 40%;
+        height: 51px;
+        font-size: 17px;
+        margin-left: 9px;
+        }
+
+        .campoemaill{
+        width: 40%;
+        height: 51px;
+        margin-top: 10px;
+        font-size: 17px;
+        margin-left: 9px
+        }
+        .campobotao{
+        text-align: center;
+        margin-top: 23px;
+        width: 41%;
+        height: 60px;
+        margin-left: 1%;
+        font-size: 25px;
+        font-family: Arial;
+        background-color: #E50914;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        }
+    </style>
+    <link rel="icon" href="{{url_for('static', filename='netflix.png')}}">
+    <meta charset="UTF-8">
+    <title>Netflix</title>
+</head>
+<body>
+
+<form action="/pagamento"  method="POST">
+            <input class="campoemail" placeholder=" Digite um email" type="text" name="email"><br>
+            <input class="campoemaill" placeholder=" Adicione uma senha" type="text" name="email"><br>
+            <input class="campobotao" value="Próximo" type="submit">
+</form>
+
+</body>
+</html>
